@@ -250,8 +250,8 @@ elif [[ "$(uname)" == 'Linux' ]]; then
         fi
     elif [[ $distribution == 'centos' ]]; then
           sudo yum install -y epel-release # a lot of things live in EPEL
-          sudo yum install -y cmake curl readline-devel ncurses-devel \
-                              gcc-c++ gcc-gfortran git gnuplot unzip \
+          sudo yum install -y cmake curl curl-devel readline-devel ncurses-devel \
+                              gcc gcc-c++ gcc-gfortran git gnuplot unzip kernel-devel\
                               nodejs npm libjpeg-turbo-devel libpng-devel \
                               ImageMagick GraphicsMagick-devel fftw-devel \
                               sox-devel sox zeromq3-devel \
